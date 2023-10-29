@@ -1,0 +1,3 @@
+[submodule "modelscope-agent"]
+	path = modelscope-agent
+	url = https://github.com/modelscope/modelscope-agent.git
