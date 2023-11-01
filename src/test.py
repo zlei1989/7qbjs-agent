@@ -1,3 +1,6 @@
+import sys
+sys.path.append('../modelscope-agent/')
+
 from modelscope_agent.llm import LLMFactory
 from modelscope.hub.api import HubApi
 
@@ -27,7 +30,7 @@ class QqbNewPageTool(Tool):
         'required': True
     }, {
         'name': 'pagePath',
-        'description': '页面路径。不指定则把标题翻译成英文，单词间用-符号隔开',
+        'description': '页面路径。不指定则把标题翻译成英文，全小写，英文单词间用减号隔开，如商户信息的是merchant-information',
         'required': True
     }]
 
